@@ -1,0 +1,92 @@
+[
+  {
+    "from": "BA1 (1)",
+    "to": "Abandon (2)",
+    "value": 3
+  },
+  {
+    "from": "BA1 (1)",
+    "to": "BA1 (2)",
+    "value": 3
+  },
+  {
+    "from": "BA1 (1)",
+    "to": "BA2 (2)",
+    "value": 2
+  },
+  {
+    "from": "BA1 (2)",
+    "to": "BA2 (3)",
+    "value": 3
+  },
+  {
+    "from": "BA2 (2)",
+    "to": "BA2 (3)",
+    "value": 1
+  },
+  {
+    "from": "BA2 (2)",
+    "to": "BA3 (3)",
+    "value": 1
+  },
+  {
+    "from": "BA2 (3)",
+    "to": "BA2 (4)",
+    "value": 1
+  },
+  {
+    "from": "BA2 (3)",
+    "to": "BA3 (4)",
+    "value": 3
+  },
+  {
+    "from": "BA2 (4)",
+    "to": "BA3 (5)",
+    "value": 1
+  },
+  {
+    "from": "BA3 (3)",
+    "to": "BA3 (4)",
+    "value": 1
+  },
+  {
+    "from": "BA3 (4)",
+    "to": "Abandon (5)",
+    "value": 1
+  },
+  {
+    "from": "BA3 (4)",
+    "to": "BA3 (5)",
+    "value": 1
+  },
+  {
+    "from": "BA3 (4)",
+    "to": "MA1 (5)",
+    "value": 2
+  },
+  {
+    "from": "BA3 (5)",
+    "to": "BA3 (6)",
+    "value": 1
+  },
+  {
+    "from": "BA3 (5)",
+    "to": "MA1 (6)",
+    "value": 1
+  },
+  {
+    "from": "MA1 (5)",
+    "to": "MA2 (6)",
+    "value": 2
+  },
+  {
+    "from": "MA1 (6)",
+    "to": "MA2 (6)",
+    "value": 1
+  },
+  {
+    "from": "start",
+    "to": "BA1 (1)",
+    "value": 8
+  }
+]

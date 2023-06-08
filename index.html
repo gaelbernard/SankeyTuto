@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>JavaScript Sankey Diagram</title>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-sankey.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-data-adapter.min.js"></script>
+
+    <style>
+      html, body, #container { 
+        width: 100%; height: 100%; margin: 0; padding: 0; 
+      } 
+    </style>
+  </head>
+  <body>  
+    <div id="container"></div>
+    <script>
+      anychart.data.loadJsonFile("grades.json", function (data) {
+  
+        // create a sankey diagram instance
+        let chart = anychart.sankey();
+
+        // load the data to the sankey diagram instance
+        chart.data(data);
+
+
+        // set the chart container id
+        chart.container("container");
+
+        chart.palette(anychart.palettes.monochrome);
+
+        // Set a specific color for Abandon
+        var nodeColors = {
+          'Abandon (1)': 'red',
+          'Abandon (2)': 'red',
+          'Abandon (5)': 'red',
+        }
+        chart.node().fill(function() {
+          return nodeColors[this.name] || this.sourceColor;
+        });
+
+        // draw the chart
+        chart.draw();
+  
+      });
+    </script>
+  </body>
+</html>
